@@ -1,3 +1,4 @@
+/**** Commenting this code as Quiz Nine is also based on similar components */
 fun main(args: Array<String>) {
     print("Your fortune is: ${getFortuneCookie()}")
 
@@ -26,3 +27,4 @@ fun getFortuneCookie() :String {
     val remainderIndex = (birthday)%(fortunes.count())
     return fortunes[remainderIndex]
 }
+
