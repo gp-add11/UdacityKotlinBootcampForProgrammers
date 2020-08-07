@@ -1,15 +1,23 @@
-/**** Commenting this code as Quiz Nine is also based on similar components */
+/**** Commenting this code as Quiz Nine, Fifteen is also based on similar components */
 fun main(args: Array<String>) {
     print("Your fortune is: ${getFortuneCookie()}")
 
     //Extra practice part
     var fortune:String
-    for (i in 1..10){
+    for (i in 1..10 ){                  //changed intRange from 1..10 to 1..1 for testing
         fortune = getFortuneCookie()
         println("Your fortune is ${fortune}")
         //if(fortune.contains("Take it easy")) break
         if (fortune.toLowerCase().contains("take it easy")) break
     }
+
+/* Can 'break' be replaced in repeat with some other expression to get desired result?
+    repeat(10){
+        fortune = getFortuneCookie()
+        println("Your fortune is ${fortune}")
+        if (fortune.toLowerCase().contains("take it easy")) break
+    }
+*/
 }
 
 fun getFortuneCookie() :String {
