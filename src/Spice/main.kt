@@ -18,6 +18,9 @@ fun main (args: Array<String>) {
 
     val hotSpices = listOfSpices.filter { it.heat >5 }
     //println(hotSpices.forEach { it.name }) --- this is not working
+    for (x in hotSpices){
+        println("Spicy spices are " + x.name + ", ")
+    }
     val spice = Spice("cayenne", "spicy")
 
     makeSalt()
