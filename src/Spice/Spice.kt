@@ -1,5 +1,6 @@
 package Spice
 
+
 class Spice (val name: String, val spiciness: String = "mild") {
     val heat: Int
         get() { return when(spiciness){
