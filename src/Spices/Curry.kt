@@ -12,4 +12,14 @@ class Curry (name: String, spiciness: String, color: SpiceColor = YellowSpiceCol
     override fun prepareSpice() {
         grind()
     }
+
+    var updatedSpiceColor: SpiceColor = YellowSpiceColor
+        set(value) {
+            color = if(spiciness.contains("hot",true)) {
+                "red"
+            } else {
+                "yellow"
+            }
+        }
+
 }
