@@ -11,5 +11,7 @@ fun main (args: Array<String>) {
     val allBooks = setOf("Hamlet", "Romeo Juliet", "Caesar", "Shakespeare's Autobiography", "Midsummer")
     val library = mapOf("Shakespeare" to allBooks)
     println(library.any { it.value.contains("Hamlet") }) // returns boolean
-
+    val moreBooks = mutableMapOf("Shakespeare's poems" to "Shakespeare")
+    moreBooks.getOrPut("Christmas Carol") {"Charles Dickens"}
+    println(moreBooks)
 }
